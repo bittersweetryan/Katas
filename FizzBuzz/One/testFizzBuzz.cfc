@@ -40,14 +40,6 @@
 		variables.FizzBuzz.Answer("a");
 	}
 	
-	public void function test_pass_in_array_and_get_exptected_output(){
-		var myArray = [1,2,3];
-		actual = variables.FizzBuzz.Answer(myArray);
-		expected = "1,2,Fizz";
-		
-		assertEquals(expected,actual);
-	}
-	
 	public void function test_pass_in_longer_array_and_get_exptected_output(){
 		var myArray = [];
 		for(i=1;i<=15;i++){
@@ -56,6 +48,15 @@
 		
 		actual = variables.FizzBuzz.Answer(myArray);
 		expected = "1,2,fizz,4,buzz,fizz,7,8,fizz,buzz,11,fizz,fizz,14,fizzbuzz";
+		assertEquals(expected,actual);
+	}
+	
+	public void function test_pass_in_list_and_get_exptected_output(){
+		var myList = "1,2,3,4,5,6,7,8,9,10,11,12,13,14,15";
+		
+		actual=variables.FizzBuzz.Answer(myList);
+		expected = "1,2,fizz,4,buzz,fizz,7,8,fizz,buzz,11,fizz,fizz,14,fizzbuzz";
+		
 		assertEquals(expected,actual);
 	}
 }
