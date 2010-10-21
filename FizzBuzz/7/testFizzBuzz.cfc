@@ -13,7 +13,8 @@
 		assertEquals(expected,actual);
 	}
 	
-	public void function test_5_should_return_buzz(){
+	public void 
+                function test_5_should_return_buzz(){
 		expected = 'buzz';
 		actual = variables.FizzBuzz.Answer(5);
 		

@@ -24,7 +24,7 @@
 					return "People still use ColdFusion?";
 				break;
 				case "ruby":
-					return "I don't like Ruby.!";
+					return "I don't like Ruby!";
 				break;
 			}				
 		</cfscript>
