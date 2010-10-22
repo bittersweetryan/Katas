@@ -2,6 +2,7 @@
 	
 	<cffunction name="SetUp" access="public">
 		<cfscript>
+			//create the CUT
 			variables.Programmer = new Programmer();
 		</cfscript>
 	</cffunction>

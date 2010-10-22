@@ -18,13 +18,13 @@
 			switch("#variables.language#") 
 			{
 				case "php":
-					return "ColdFusion Rocks!";
+					return "ColdFusion Sucks!";
 				break;
 				case "java":
 					return "People still use ColdFusion?";
 				break;
 				case "ruby":
-					return "I don't like Ruby!";
+					return "If its not Ruby it sucks!";
 				break;
 			}				
 		</cfscript>
