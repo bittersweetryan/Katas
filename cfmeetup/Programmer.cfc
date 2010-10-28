@@ -20,29 +20,31 @@
 			switch("#variables.language#") 
 			{
 				case "php":
-					return "ColdFusion Rocks!";
+					return "ColdFusion Sucks!";
 				break;
 				case "java":
 					return "People still use ColdFusion?";
 				break;
 				case "ruby":
-					return "I don't like Ruby.";
+					return "If its not Ruby it sucks!.";
 				break;
 			}				
 		</cfscript>
 	</cffunction> 
 	
-	<cffunction name="AddNewLanguage" returntype="void" access="public">
+	<cffunction name="AddNewLanguage" returntype="boolean" access="public">
 		<cfargument name="language" type="string" />
 		<cfscript>
-			AddLanguage(arguments.language);
+			if(!AddLanguage(arguments.language));
+				
 		</cfscript>
 	</cffunction>
 	
-	<cffunction name="AddLanguage" returntype="void" access="private">
+	<cffunction name="AddLanguage" returntype="boolean" access="private">
 		<cfargument name="language" type="string" />
 		<cfscript>
 			ArrayAppend(variables.languages,arguments.language);
+			return true;
 		</cfscript>
 	</cffunction>
 </cfcomponent>

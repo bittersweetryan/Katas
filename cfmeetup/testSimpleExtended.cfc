@@ -38,6 +38,14 @@
 			assertEquals(expected,actual);
 		</cfscript>
 	</cffunction>
+	
+	<cffunction name="test_inject_method">
+		
+	</cffunction>
+	
+	<cffunction name="InjectAddLanguage" returntype="boolean">
+		<cfreturn true>
+	</cffunction>
 </cfcomponent>
 
 
