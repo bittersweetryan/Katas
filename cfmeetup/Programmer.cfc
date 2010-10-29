@@ -2,8 +2,6 @@
 	<cfscript>
 		variables.language = "";
 		variables.languages = [];
-		
-		
 	</cfscript>
 	
 	<cffunction name="SetLanguage" returntype="void" access="public" 
@@ -26,7 +24,7 @@
 					return "People still use ColdFusion?";
 				break;
 				case "ruby":
-					return "If its not Ruby it sucks!.";
+					return "If its not Ruby it sucks!";
 				break;
 			}				
 		</cfscript>
