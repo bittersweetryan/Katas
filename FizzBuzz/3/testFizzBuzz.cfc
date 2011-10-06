@@ -3,7 +3,7 @@
 
 	public void function setUp(){
 		//create the cut
-		variables.FizzBuzz = new FizzBuzz();
+		variables.FizzBuzz = new FizzBuzz.3.FizzBuzz();
 		
 	}
 	
